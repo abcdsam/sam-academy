@@ -840,6 +840,145 @@ transform:translateY(-8px);
 
 }
 
+/* CBT EXAM */
+
+.examHeader{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#081626;
+
+}
+
+.timerBox{
+
+text-align:center;
+background:#132743;
+padding:15px 25px;
+border-radius:15px;
+
+}
+
+.examContainer{
+
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:30px;
+padding:40px 8%;
+
+}
+
+.questionPanel{
+
+background:rgba(255,255,255,.08);
+padding:35px;
+border-radius:20px;
+
+}
+
+.question{
+
+font-size:24px;
+margin:25px 0;
+
+}
+
+.option{
+
+padding:18px;
+margin:15px 0;
+background:#132743;
+border-radius:12px;
+cursor:pointer;
+
+}
+
+.option:hover{
+
+background:#1b3558;
+
+}
+
+.examButtons{
+
+display:flex;
+gap:15px;
+margin-top:35px;
+flex-wrap:wrap;
+
+}
+
+.palette{
+
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:20px;
+
+}
+
+.paletteGrid{
+
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:10px;
+margin:20px 0;
+
+}
+
+.paletteGrid button{
+
+height:45px;
+border:none;
+border-radius:10px;
+background:#132743;
+color:white;
+cursor:pointer;
+
+}
+
+.answered{
+
+background:#22C55E !important;
+
+}
+
+.submitExam{
+
+width:100%;
+padding:15px;
+border:none;
+border-radius:12px;
+background:#F6C344;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+@media(max-width:900px){
+
+.examContainer{
+
+grid-template-columns:1fr;
+
+}
+
+.palette{
+
+order:-1;
+
+}
+
+.question{
+
+font-size:20px;
+
+}
+
+}
+
+
 
 
 
