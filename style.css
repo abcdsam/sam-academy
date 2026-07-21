@@ -1,54 +1,68 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
 body{
-background:#eef3f8;
-color:#222;
+margin:0;
+font-family:Arial;
+background:#eef4ff;
 }
 
-header{
-background:linear-gradient(135deg,#0d6efd,#198754);
+.topbar{
+background:#003366;
 color:white;
+text-align:center;
 padding:25px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+background:#0055aa;
+}
+
+nav a{
+color:white;
+padding:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+padding:50px 20px;
 text-align:center;
 }
 
-.container{
-max-width:900px;
-margin:auto;
-padding:20px;
+.hero h2{
+font-size:35px;
+}
+
+button{
+background:#ff9800;
+color:white;
+padding:15px 30px;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:30px;
 }
 
 .card{
 background:white;
-border-radius:15px;
 padding:25px;
-margin-top:20px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-
-button{
-background:#0d6efd;
-color:white;
-padding:14px 25px;
-border:none;
-border-radius:10px;
-font-size:18px;
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-background:#0b5ed7;
-transform:scale(1.03);
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,.15);
+text-align:center;
 }
 
 footer{
+background:#003366;
+color:white;
+padding:20px;
 text-align:center;
-padding:25px;
-color:#666;
+margin-top:40px;
 }
